@@ -34,10 +34,10 @@ You don't need a Raspberry Pi to play or develop. The game automatically detects
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/first-game.git
+git clone https://github.com/michaelkomolafe2/first-project.git
 
 # 2. Navigate into the directory
-cd first-game
+cd first-project
 
 # 3. Run the game!
 python3 main.py
@@ -106,7 +106,7 @@ Adding your own trivia is as easy as editing a JSON file — no Python knowledge
 ## 🛠️ Project Structure
 
 ```
-first-game/
+first-project/
 ├── main.py                 # Entry point and main menu
 ├── config.py               # Hardware pin constants and quiz data loader
 ├── hardware.py             # LED/Button abstraction layer
