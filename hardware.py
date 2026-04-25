@@ -7,30 +7,27 @@ try:
 except ImportError:
     HARDWARE = False
 
+    class LED:
+        def __init__(self, pin):
+            self.pin = pin
 
-class LED:
-    def __init__(self, pin):
-        self.pin = pin
+        def on(self):
+            print(f"[LED {self.pin} ON]")
 
-    def on(self):
-        print(f"[LED {self.pin} ON]")
+        def off(self):
+            print(f"[LED {self.pin} OFF]")
 
-    def off(self):
-        print(f"[LED {self.pin} OFF]")
+        def blink(self, on_time=1, off_time=1, **kwargs):
+            print(f"[LED {self.pin} BLINK on={on_time}s off={off_time}s]")
 
-    def blink(self, on_time=1, off_time=1, **kwargs):
-        print(f"[LED {self.pin} BLINK on={on_time}s off={off_time}s]")
+    class Button:
+        def __init__(self, pin):
+            self.pin = pin
+            self.when_pressed = None
 
-
-class Button:
-    def __init__(self, pin):
-        self.pin = pin
-        self.when_pressed = None
-
-    def press(self):
-        if callable(self.when_pressed):
-            self.when_pressed()
-
+        def press(self):
+            if callable(self.when_pressed):
+                self.when_pressed()
 
 from config import LED_PINS, BUTTON_P1_PIN, BUTTON_P2_PIN
 
@@ -42,15 +39,14 @@ btn_p1 = Button(BUTTON_P1_PIN)
 btn_p2 = Button(BUTTON_P2_PIN)
 
 # Named references for clarity
-led_p1 = life_leds[0]  # Player 1 indicator — leftmost LED
+led_p1    = life_leds[0]  # Player 1 indicator — leftmost LED
 led_timer = life_leds[1]  # Shared timer indicator — middle LED
-led_p2 = life_leds[2]  # Player 2 indicator — rightmost LED
+led_p2    = life_leds[2]  # Player 2 indicator — rightmost LED
 
 
 # ==========================================
 # LED HELPERS
 # ==========================================
-
 def set_all_leds(state):
     """Turns all LEDs 'on' or 'off'."""
     for led in life_leds:
@@ -72,8 +68,9 @@ def set_timer_led(fast=False):
         led_timer.blink(on_time=0.5, off_time=0.5)
 
 
+# ==========================================
 # BUTTON HELPERS
-
+# ==========================================
 def wait_for_buzz(timeout, allowed_players=(1, 2)):
     """
     Waits for a hardware button press and returns the winning player number.
