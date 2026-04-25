@@ -1,0 +1,65 @@
+{
+  "A": {
+    "difficulty": "Easy",
+    "time_limit": 15,
+    "questions": [
+      { "q": "What is the fastest land animal?", "a": "cheetah" },
+      { "q": "How many legs does a spider have?", "a": "8" },
+      { "q": "What do bees make?", "a": "honey" },
+      { "q": "How many days are in a standard week?", "a": "7" },
+      { "q": "What is the freezing point of water in Celsius?", "a": "0" },
+      { "q": "Which ocean is the largest?", "a": "pacific" },
+      { "q": "What is the opposite of north?", "a": "south" },
+      { "q": "What color is a school bus?", "a": "yellow" },
+      { "q": "What planet do we live on?", "a": "earth" },
+      { "q": "What shape is a stop sign?", "a": "octagon" },
+      { "q": "What animal says 'moo'?", "a": "cow" },
+      { "q": "What is a baby dog called?", "a": "puppy" },
+      { "q": "How many fingers are on two standard human hands?", "a": "10" },
+      { "q": "What is the opposite of up?", "a": "down" },
+      { "q": "What is the color of an emerald?", "a": "green" }
+    ]
+  },
+  "B": {
+    "difficulty": "Medium",
+    "time_limit": 10,
+    "questions": [
+      { "q": "What planet is known as the Red Planet?", "a": "mars" },
+      { "q": "What is the chemical symbol for gold?", "a": "au" },
+      { "q": "What is the capital of Japan?", "a": "tokyo" },
+      { "q": "Who painted the Mona Lisa?", "a": "leonardo da vinci" },
+      { "q": "What is the hardest natural substance on Earth?", "a": "diamond" },
+      { "q": "In what country would you find the Eiffel Tower?", "a": "france" },
+      { "q": "What is the largest organ in the human body?", "a": "skin" },
+      { "q": "Who is the author of the Harry Potter series?", "a": "j.k. rowling" },
+      { "q": "How many continents are there on Earth?", "a": "7" },
+      { "q": "What is the closest star to Earth?", "a": "sun" },
+      { "q": "By what process do plants make their own food?", "a": "photosynthesis" },
+      { "q": "What is the primary language spoken in Brazil?", "a": "portuguese" },
+      { "q": "What is the official currency of the United Kingdom?", "a": "pound" },
+      { "q": "What is the largest mammal in the world?", "a": "blue whale" },
+      { "q": "What element makes up the majority of Earth's atmosphere?", "a": "nitrogen" }
+    ]
+  },
+  "C": {
+    "difficulty": "Hard",
+    "time_limit": 10,
+    "questions": [
+      { "q": "What year did the Apollo 11 moon landing happen?", "a": "1969" },
+      { "q": "Who wrote the play 'Macbeth'?", "a": "william shakespeare" },
+      { "q": "What is the smallest country in the world by land area?", "a": "vatican city" },
+      { "q": "What is the chemical symbol for Tungsten?", "a": "w" },
+      { "q": "In what year did the Titanic sink?", "a": "1912" },
+      { "q": "What is the capital city of Australia?", "a": "canberra" },
+      { "q": "What is the rarest human blood type?", "a": "ab negative" },
+      { "q": "Who was the first Emperor of Rome?", "a": "augustus" },
+      { "q": "What organelle is known as the powerhouse of the cell?", "a": "mitochondria" },
+      { "q": "What is generally considered the longest river in the world?", "a": "nile" },
+      { "q": "What is the pH level of pure water?", "a": "7" },
+      { "q": "Who is credited with inventing the telephone?", "a": "alexander graham bell" },
+      { "q": "Who painted 'The Starry Night'?", "a": "vincent van gogh" },
+      { "q": "What is the longest bone in the human body?", "a": "femur" },
+      { "q": "What element has the atomic number 1?", "a": "hydrogen" }
+    ]
+  }
+}
